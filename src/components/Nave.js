@@ -29,8 +29,7 @@ export default function BasicCard({nave}) {
         <Card sx={{ minWidth: 275 }}>
       <CardContent>
           <Avatar>
-              {nave
-              .name[0]}
+              {nave.name[0]}
           </Avatar>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
         
