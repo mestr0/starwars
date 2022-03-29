@@ -6,6 +6,9 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { ConnectingAirportsOutlined } from '@mui/icons-material';
+import Grid from '@mui/material/Grid';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import Avatar from '@mui/material/Avatar';
 
 
 const bull = (
@@ -19,9 +22,18 @@ const bull = (
 export default function BasicCard({nave}) {
     console.log(nave)
   return (
-    <Card sx={{ minWidth: 275 }}>
+
+
+      
+        <Grid item xs={2}>
+        <Card sx={{ minWidth: 275 }}>
       <CardContent>
+          <Avatar>
+              {nave
+              .name[0]}
+          </Avatar>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        
            
           { nave.model }
         </Typography>
@@ -51,5 +63,7 @@ export default function BasicCard({nave}) {
         </Typography>
       </CardContent>
     </Card>
+        </Grid>
+       
   );
 }
