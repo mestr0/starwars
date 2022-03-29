@@ -22,23 +22,34 @@ export default function BasicCard({nave}) {
     <Card sx={{ minWidth: 275 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          { nave.name }
+           
+          { nave.model }
         </Typography>
         <Typography variant="h5" component="div">
-          {nave. }
+            
+          { nave.name }
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          adjective
+            
+          { nave.manufacturer}
         </Typography>
         <Typography variant="body2">
-          well meaning and kindly.
+            Cost:
+          { nave.cost_in_credits}
           <br />
-          {'"a benevolent smile"'}
+          Length:
+          { nave.length}
+          <br />
+          Speed
+          { nave.max_atmosphering_speed}
+          <br />
+          Passangers
+          { nave.passangers}
+          <br />
+          Capacity:
+          { nave.cargo_capacity}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
   );
 }
