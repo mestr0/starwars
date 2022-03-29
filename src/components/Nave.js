@@ -33,7 +33,6 @@ export default function BasicCard({nave}) {
           </Avatar>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
         
-           
           { nave.model }
         </Typography>
         <Typography variant="h5" component="div">
